@@ -2,7 +2,7 @@ module.exports = {
   title: `Codezzz Blog`,
   description: `Blog posted about ...`,
   author: `[최혁진]`,
-  introduction: `I explain with words and code. I explain with words and code. I explain with words and code.`,
+  introduction: `I explain with words and code.`,
   siteUrl: `https://gatsby-starter-bee.netlify.com`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
