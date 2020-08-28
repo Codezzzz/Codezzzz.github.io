@@ -8,15 +8,16 @@ draft: false
 
 ![](./images/안드로이드_URL_미리보기.png)
 
-# 안드로이드 URL 미리보기 
+# 안드로이드 URL 미리보기
 
-> 설치하기 
-> 
+> 설치하기
+
 ```sh
 implementation "org.jsoup:jsoup:1.11.3"
 ```
 
-> 중간에 이미지 프리뷰 대신 유투브 동영상 플레이어 넣고 샢을때 
+> 중간에 이미지 프리뷰 대신 유투브 동영상 플레이어 넣고 샢을때
+
 ```sh
 implementation "com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5"
 ```
@@ -86,7 +87,7 @@ class JsoupAsyncTask internal constructor() :
 
 
     override fun onPostExecute(result: JsoupEntity?) {
-    
+
     }
 
 }
@@ -112,7 +113,7 @@ fun renderUrlPreview(view: LinearLayout, contentText: String, context: Context, 
 
 
     urlList.map {
-        val ll = LinearLayout(context) // LinearLayout에 addview해서 화면 구성 
+        val ll = LinearLayout(context) // LinearLayout에 addview해서 화면 구성
         ll.id = View.generateViewId()
         val data =  JsoupAsyncTask().execute(it).get() // 루프 돌면서 해당 주소 정보 가져오기
 
@@ -133,3 +134,7 @@ fun renderUrlPreview(view: LinearLayout, contentText: String, context: Context, 
 
 }
 ```
+
+### ex)
+
+![](./images/url_preview.png)
