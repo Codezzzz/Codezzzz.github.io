@@ -2,7 +2,7 @@
 title: 안드로이드-커스텀-EDITTEXT
 date: 2020-08-28 15:08:25
 category: android
-thumbnail: { thumbnailSrc }
+thumbnail: './images/안드로이드_커스텀_EDIT-TEXT.png'
 draft: false
 ---
 
